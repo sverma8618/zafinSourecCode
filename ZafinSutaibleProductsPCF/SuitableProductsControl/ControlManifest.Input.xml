@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="ZafinSuitableProducts" constructor="SuitableProductsControl" version="0.0.47" display-name-key="SuitableProductsControl" description-key="SuitableProductsControl description" control-type="standard" >
+     <!-- dataset node represents a set of entity records on CDS; allow more than one datasets -->
+    <data-set name="sampleDataSet" display-name-key="Dataset"> </data-set>
+    <property name="CustomerId" display-name-key="Customer Id" description-key="Contact Id of customer" of-type="SingleLine.Text" usage="input" required="true" />
+     <property name="ZafinCustomerId" display-name-key="Zafin Customer Id" description-key="Contact Id of Zafin Customer" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="Client_id" display-name-key="Client id" description-key="Client id" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="Client_secret" display-name-key="Client secret" description-key="Client secret" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="PowerAutomateUrl" display-name-key="Power Automate Url" description-key="Power Automate Url to post data in dataverse" of-type="SingleLine.TextArea" usage="input" required="true" />
+     <property name="ZafinSuitableProductsUrl" display-name-key="Suitable Products Api" description-key="Zafin Api Url to get Suitable Products " of-type="SingleLine.TextArea" usage="input" required="true" />
+     <property name="ZafinTokenApiUrl" display-name-key="Token Api" description-key="Zafin Api Url to get token" of-type="SingleLine.TextArea" usage="input" required="true" />
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="index.css" order="1"/>
+    </resources>
+    <feature-usage>
+			<uses-feature name="WebAPI" required="true" />
+		</feature-usage>
+  </control>
+</manifest>
