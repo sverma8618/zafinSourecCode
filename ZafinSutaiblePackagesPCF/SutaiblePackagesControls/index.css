@@ -1,0 +1,42 @@
+.ms-CardItem{
+    font-size: 15px !important;
+    padding: 0px 0px 5px 15px;
+}
+.ms-DocumentCard{
+    box-shadow: 0px 1px 0px 1px rgb(0 0 0 / 16%);
+    transition: 0.3s;
+}
+
+.cardDetail{
+    white-space: normal !important;
+}
+
+.ms-Spinner{
+    display: flex !important;
+}
+
+button:disabled {
+    background-color: #9f9f9f !important;
+    color: #1f2020 !important;
+}
+
+.ResolvedPackageSection{
+    text-align: start;
+    box-sizing: border-box;
+    align-items: stretch;
+    justify-content: flex-start;
+    border-radius: 2px;
+    box-shadow: rgb(0 0 0 / 13%) 0px 1.6px 3.6px 0px, rgb(0 0 0 / 11%) 0px 0.3px 0.9px 0px;
+    cursor: default;
+    min-width: 212px;
+    outline: none;
+    transition: box-shadow 0.5s ease 0s;
+    background: white;
+    padding: 20px;
+    border-top: 5px solid rgb(0, 120, 212);
+    margin: auto;
+}
+
+.control-container {
+    border-color: white !important;
+}

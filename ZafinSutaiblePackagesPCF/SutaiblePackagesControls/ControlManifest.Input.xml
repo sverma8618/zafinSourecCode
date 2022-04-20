@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="ZafinSuitablePackages" constructor="SuitablePackagesControl" version="0.0.39" display-name-key="SuitablePackagesControl" description-key="SuitablePackagesControl description" control-type="standard" >
+     <!-- dataset node represents a set of entity records on CDS; allow more than one datasets -->
+    <data-set name="sampleDataSet" display-name-key="Dataset"></data-set>
+    <property name="CustomerId" display-name-key="Customer Id" description-key="Contact Id of customer" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="Client_id" display-name-key="Client id" description-key="Client id" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="Client_secret" display-name-key="Client secret" description-key="Client secret" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="ZafinCustomerId" display-name-key="Zafin Customer Id" description-key="Zafin Customer Id" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="ZafinSubcPckgUrl" display-name-key="Subscribe Package Url" description-key="Zafin Api Url to Subscribe the packages " of-type="SingleLine.TextArea" usage="input" required="true" />
+    <property name="ZafinSuitablePckgUrl" display-name-key="Resolved Package Url" description-key="Zafin Api Url to get the resolved packages " of-type="SingleLine.TextArea" usage="input" required="true" />
+    <property name="ZafinToken" display-name-key="Zafin Token" description-key="get zafin token" of-type="SingleLine.Text" usage="input" required="true" />
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="index.css" order="1"/>
+    </resources>
+    <feature-usage>
+			<!-- <uses-feature name="Utility" required="true" /> -->
+			<uses-feature name="WebAPI" required="true" />
+		</feature-usage>
+  </control>
+</manifest>
